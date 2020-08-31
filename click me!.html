@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musicPlayerVer_0_0_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>MusicPlayer</title>
+    <!-- https://github.com/sayantanm19/js-music-player  -->
+</head>
+<body>
+    
+    <header>    
+        <h1 id="title">MusicPlayer</h1>
+    </header>
+
+    
+    <section>
+        
+        <div class="player">
+            <div class="details">
+                <div class="number-of-songs"> 0 / 0 </div>
+                <div class="song-img"></div>
+                <div class="song-name">Song Name</div>
+            </div>
+
+            <div class="buttons">
+                <div class="prev-button" onclick="prevTrack()"><i class="fas fa-angle-double-left fa-3x"></i></div>
+                <div class="play-button" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-3x"></i></div>
+                <div class="next-button" onclick="nextTrack()"><i class="fas fa-angle-double-right fa-3x"></i></div>
+                <div class="doubleTime-button" onclick="doubleTime()"><i class="fas fa-angle-double-up fa-3x"></i></div>
+                <div class="halfTime-button" onclick="halfTime()"><i class="fas fa-angle-double-down fa-3x"></i></div>
+            </div> 
+
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-time">00:00</div>
+            </div>
+
+        </div>
+    </section>
+    <script src="musicPlayerVer_0_0_1.js"></script>
+</body>
+</html>
