@@ -1,1 +1,1 @@
-https://github.com/sayantanm19/js-music-player
+https://github.com/sayantanm19/js-music-player << imitation from this file
